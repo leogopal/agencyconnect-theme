@@ -1,0 +1,19 @@
+.pagetitlewrap {
+	.grid-container {
+		@include kprefix(1);
+		@include ksuffix(1);
+	}
+
+	.page-title {
+		margin: 0;
+	}
+	.page-description {
+		margin: 0;
+	}
+	em {}
+	a {
+		border-bottom: none;
+	}
+
+}
+

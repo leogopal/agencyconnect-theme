@@ -1,0 +1,95 @@
+// Type Setup
+$body-font-size   :   16px;
+$body-line-height :   1.625;
+$scale-factor     :   $minor-third;  // check presets in knife.scss file
+$ie8compatability :   false;
+$kbase            :   ceil($body-font-size * $body-line-height) !global; 
+
+/* 
+  Colors 
+*/
+
+// General
+$default            : #00a1cb;
+$success            : #7db500;
+$warning            : #f18d05;
+$error              : #e54028;
+$attention          : #87318c;
+$selection-bg       : #A6C4BC;
+$selection-text     : #efefef;
+
+// Links
+$linkcolor1       : #1699B9;
+$linkhighlight    : #7EC9D3;  
+
+// Custom 
+$textcolor        : #444;
+$textmid          : #666;
+$textlight        : #888;
+$alttextcolor     : #fff;
+$bg1              : #fff;
+$bg2              : #444;
+$bg3              : #2C3E50;
+
+/*     
+  Grid/ Susy Layout Setups
+ */
+$min-width         : 305px;
+
+// Defaults are set using a SASS map
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: split,
+  container: auto,
+  container-position: center,
+  columns: 24,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: true,
+    box-sizing: true,
+    clearfix: true,
+    rem: true,
+  )
+);
+
+/* 
+    Media Queries
+ */
+
+$small : 480px !default;
+$toSmall : 479px !default;
+$fromSmall : 480px !default;
+
+$mobile : 0px !default;
+$toMobile : 766px !default;
+$fromMobile : 0px !default;
+
+$tablet : 767px !default;
+$toTablet : 766px !default;
+$fromTablet : 767px !default;
+
+$desktop : 1024px !default;
+$toDesktop : 1023px !default;
+$fromDesktop : 1024px !default;
+
+$monitor : 1330px !default;
+$toMonitor : 1329px !default;
+$fromMonitor : 1330px !default;
+
+$big : 1440px !default; 
+$toBig : 1440px !default; 
+$fromBig : 1440px !default; 
+
+

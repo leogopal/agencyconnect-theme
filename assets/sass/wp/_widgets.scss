@@ -1,0 +1,172 @@
+/* WordPress CSS - Default WordPress Widgets
+- - - - - - - - - - - - - - - - - - - - - - -*/
+%widget,
+.widget {
+	display:block;
+	@include ksuffix(2,'true');
+	// hmmmm......
+	@include breakpoint($fromSmall $toMobile) {
+		@include span(12 of 24);
+	}
+}
+
+%widget_ul,
+.widget ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+%widget_li,
+.widget li {
+	display: block;
+	position: relative;
+}
+
+%widget_a,
+.widget a {
+	display: inline-block;
+	border: none;
+}
+
+/* Titles */
+.widget-title {
+	@include ktype(1,0,1);
+}
+
+/* links widget */
+.widget_links {}
+.widget_links ul {}
+.widget_links ul li {}
+.widget_links ul li a {}
+.widget_links li:after {}
+.widget_links li:before {}
+
+/* meta widget */
+.widget_meta { }
+.widget_meta ul {}
+.widget_meta ul li {}
+.widget_meta ul li a {}
+
+/* pages widget */
+.widget_pages { }
+.widget_pages ul {}
+.widget_pages ul li {}
+.widget_pages ul li a {}
+
+/* recent-posts widget */
+.widget_recent_entries { }
+.widget_recent_entries ul {}
+.widget_recent_entries ul li {}
+.widget_recent_entries ul li a {}
+
+/* recent-comments widget */
+.widget_recent_comments { }
+.widget_recent_comments ul {}
+.widget_recent_comments li {}
+.widget_recent_comments li a {}
+
+/* archives widget */
+.widget_archive { }
+.widget_archive ul {}
+.widget_archive ul li {}
+.widget_archive ul li a {}
+.widget_archive select {}
+.widget_archive option {}
+
+/* tag-cloud widget */
+.widget_tag_cloud {}
+.widget_tag_cloud a {}
+.widget_tag_cloud a:after {}
+.widget_tag_cloud a:before {}
+
+/* category widget */
+.widget_categories {}
+.widget_categories ul {}
+.widget_categories ul li { }
+.widget_categories ul ul.children {
+	padding-left: 3%;
+}
+.widget_categories a { }
+.widget_categories select{}
+.widget_categories select#cat {}
+.widget_categories select.postform {}
+.widget_categories option {}
+.widget_categories .level-0 {}
+.widget_categories .level-1 {}
+.widget_categories .level-2 {}
+.widget_categories .level-3 {}
+
+.widget_nav_menu {}
+.widget_nav_menu ul {}
+.widget_nav_menu ul ul { margin-top: 0;}
+.widget_nav_menu li {}
+.widget_nav_menu a {}
+
+/* calendar widget */
+.widget_calendar {}
+#calendar_wrap {
+	margin-top: $kbase;
+}
+#calendar_wrap th {
+	text-align: center;
+	@include krem('padding', ($kbase / 4));
+}
+#calendar_wrap td {
+	text-align: center;
+	@include krem('padding', ($kbase / 4));
+}
+#wp-calendar tr td {}
+#wp-calendar caption {
+	text-align: center;
+}
+#wp-calendar a {
+	color: #089cd0;
+	font-weight: 600;
+}
+#wp-calendar #today {}
+#wp-calendar #prev {
+	padding-left: 0;
+	text-align: left;
+}
+#wp-calendar #next {
+	padding-right: 0;
+	text-align: right;
+}
+#wp-calendar #next a {}
+#wp-calendar #prev a {}
+
+
+/* search widget */
+#searchform {}
+.widget_search {}
+.widget_search input {}
+.widget_search form {
+	// @include kprefix(1,true);
+}
+
+.screen-reader-text {
+	display:none;
+}
+
+/* text widget */
+.widget_text {}
+
+
+
+
+
+/* Custom Widget Styles
+- - - - - - - - - - - - - - */
+.nona-recent-posts {
+	padding-left: 0;
+	list-style: none;
+}
+
+.nona-widget-post-img {
+	display: block;
+	position: relative;
+	background: #CCC;
+}
+
+

@@ -1,0 +1,14 @@
+/* This File Compiles all the partials for base.css, */
+
+// Essential components
+@import 'base/_type.scss';
+@import 'base/_lists.scss';
+@import 'base/_tables.scss';
+@import 'base/_forms.scss';
+@import 'base/_media.scss';
+@import 'base/_additional.scss';
+@import 'base/_links_and_buttons.scss'; // this needs work - old as shit
+
+
+// Components
+@import 'lib/_font-awesome.scss';

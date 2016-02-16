@@ -1,0 +1,30 @@
+{
+  "name": "grunt_sass_1",
+  "version": "0.0.0",
+  "description": "ok grunt, lets get started.",
+  "main": "index.js",
+  "scripts": {
+    "test": "testit"
+  },
+  "author": "PVZ",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-bowercopy": "*",
+    "grunt-concurrent": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-css-metrics": "*",
+    "grunt-focus": "*",
+    "grunt-newer": "*",
+    "grunt-notify": "*",
+    "grunt-sass": "*",
+    "jit-grunt": "*",
+    "time-grunt": "*"
+  }
+}

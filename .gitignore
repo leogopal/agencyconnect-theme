@@ -1,0 +1,64 @@
+# Project Files
+config.codekit
+.sass-cache
+*/.sass-cache
+.bowerrc
+/assets/bower_components/
+/assets/node_modules/
+/assets/sass/lib
+/assets/js/lib/*
+/assets/js/build/*
+/assets/js/build/all.js
+/assets/js/build/libs.js
+/assets/js/build/plugins.js
+/assets/js/build/scripts.js
+/lib/vendor/**/.git
+vendor/**/.git
+.phpintel
+
+### OSX ###
+.DS_Store
+*/.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+	
+
+
+
+

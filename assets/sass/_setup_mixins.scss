@@ -1,0 +1,169 @@
+// new micro clearfix
+@mixin clearfix() {
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after { 
+	 clear: both;
+	}
+}
+
+@mixin hide() {
+	display:none;
+	visibility: hidden;
+}
+
+
+
+// Standard Font Stacks
+@mixin serifGeneric() {
+	font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+@mixin serifGeorgia() {
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+@mixin sans() {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+@mixin console() {
+	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+/* Custom Font Stacks */
+@mixin fontfamily1 {
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 300;
+}
+@mixin fontfamily2 {
+	font-family: "proxima-nova",sans-serif;
+	font-weight: 600;
+}
+@mixin fontfamily3 {
+	@include console();
+}
+
+/* RGBA Color with fallback */
+@mixin alpha-attribute($attribute, $color, $background) {
+	$percent: alpha($color) * 100%;
+	$opaque: opacify($color, 1);
+	$solid-color: mix($opaque, $background, $percent);
+	#{$attribute}: $solid-color;
+	#{$attribute}: $color;
+}
+
+/* 
+  Basic Isolations 
+*/
+@mixin well {
+	box-shadow:inset 1px 1px 1px rgba(0,0,0,0.5),inset -1px -1px 1px rgba(100,100,100,0.1);
+}
+
+@mixin bump {
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2), -1px -1px 1px rgba(100,100,100,0.3);
+}   
+
+@mixin outset {
+	border-top: 1px solid rgba(250,250,250,0.05);
+	border-left: 1px solid rgba(250,250,250,0.05);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+@mixin inset {
+	border-bottom: 1px solid rgba(250,250,250,0.05);
+	border-righ: 1px solid rgba(250,250,250,0.05);
+	border-top: 1px solid rgba(0,0,0,0.2);
+	border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+/* 
+  Button Up 
+*/
+
+
+
+@mixin button($bg: transparent, $color: #fff, $height: ceil($kbase*1.5), $fontSize:$body-font-size) {
+	background:$bg;
+	border: none;
+	color:$color;
+	cursor: pointer;
+	display: inline-block;
+	position:relative;
+	// @include krem('font-size', $fontSize);
+	font-size: 1rem;
+	@include krem('line-height', $height);
+	@include krem('height', $height);
+	width: auto;
+	padding: 0px $fontSize; 
+	text-decoration:none;
+	vertical-align: middle;
+	&:hover, &:active {
+		background: darken($bg, 8%);
+		color: rgba(0,0,0,0.45);
+	}
+}
+
+%reactiveInset {
+	&:hover {
+		@include inset;
+	}
+	&:active {
+		@include inset;
+		@include well;
+	}
+}
+
+@mixin gplay_pseudo {
+	content: "";
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+@mixin gplay($bg: #b3c833, $color: #fff, $height: ceil($kbase*1.5), $fontSize:$body-font-size) {
+	@include button($bg,$color,$height);
+	padding-right: ($height+3px);
+	&:before {
+		@include gplay_pseudo;
+		border-right:calculateRem($height) solid #f7f7f7;
+		border-bottom:calculateRem($height) solid transparent;
+		opacity: 0.25;
+	}
+	&:after {
+		@include gplay_pseudo;
+		border-right:calculateRem($height) solid #222;
+		border-top:calculateRem($height) solid transparent;
+		opacity: 0.3;
+	}
+	&:hover {
+		background:darken($bg,4%);
+	}
+	&:active {
+		background:darken($bg,6%);
+		border:none;
+		@include well;
+	}
+}    
+
+@mixin borderbutton($color: #fff, $active: #eee, $height: ceil($kbase*1.5), $fontSize:$body-font-size, $border:2px ) {
+	@include button($color: $color,$height: $height, $fontSize:$fontSize);
+	border: calculateRem($border) solid;
+	@include krem('line-height', ($height - $border));
+	&:hover, &:active {
+		color: $active;
+	}
+}
+
+@mixin linear-gradient($fromColor, $toColor) {
+	background-color: $toColor; /* Fallback Color */
+	background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+	background-image:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, $fromColor, $toColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}

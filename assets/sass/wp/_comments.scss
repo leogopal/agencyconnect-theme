@@ -1,0 +1,309 @@
+/* WP CSS - Comment Styles
+- - - - - - - - - - - - - - */
+#comments {
+	width:auto;
+}
+#comments h5 {
+	border-bottom: 1px dotted #999;
+	margin-bottom: 0.75em;
+	padding-bottom: 0.75em;
+
+}
+
+/* Comments form
+- - - - - - - - - - - - - - */
+.comment-reply-title {
+	padding-left: 0;
+	text-transform: uppercase;
+	font-weight: 400;
+	border-bottom: 1px dotted #CCC;
+	display: block;
+	clear: both;
+	@include krem('padding-bottom', $kbase / 2);
+	@include krem('margin-bottom', $kbase / 2);
+}
+
+#commentform {
+	width: 100%;
+	@include clearfix();
+}
+
+.comment-notes {
+	@include ktype(-1,0,1);
+}
+
+.comment-respond {
+	label {
+		float:left;
+	}
+
+	input[type=text] {
+		display: block;
+	}
+	textarea {
+		display: block;
+		width: 100%;
+	}
+}
+
+#comments {
+	.form-submit {
+	    margin-top: 0;
+	}
+
+	#submit {}
+}
+
+.form-allowed-tags {
+	@include clearfix();
+	@include ktype(-1,0,1);
+
+	code {
+		display: block;
+	}
+}
+
+span.required {
+	display: inline;
+	margin: 0;
+	line-height: 0;
+	color: red;
+}
+
+.comment-form-author {
+	float: left;
+	margin-right: 2%;
+	width: 32%;
+}
+
+.comment-form-email {
+	float: left;
+	margin-right: 2%;
+	width: 32%;
+}
+
+.comment-form-url {
+	float: left;
+	width: 32%;
+}
+
+.comment-form-comment {
+	clear: both;
+}
+
+.logged-in-as {}
+.comment-notes {}
+
+.comment-form-comment {
+    margin-top: 0;
+}
+
+.commentlist {
+	padding-left: 0px;
+
+	.reply {
+		margin-top: 0.75em;
+		text-align: right;
+	}
+	.reply a {}
+	.alt {}
+	.odd {}
+	.even {}
+	.thread-alt {}
+	.thread-odd {}
+	.thread-even {}
+	li ul.children .alt {}
+	li ul.children .odd {}
+	li ul.children .even {}
+	.vcard {
+		float: left;
+		height: auto;
+		width: 15%;
+		cite.fn a.url {}
+		cite.fn {
+				display: block;
+				text-align: left;
+				width: 100%;
+			}
+		span.says {}
+		img.photo {}
+		img.avatar {
+				max-width: 112px;
+				max-height: 112px;
+				width: 90%;
+			}
+	}
+	 ul.children .vcard {
+	 	float: left;
+	 	height: auto;
+	 	width: 20%;
+	 }
+	ul.children .vcard img.avatar {
+		// border: 1px solid #eee;
+		width: 67%;
+	}
+	.comment-meta {
+		a {}
+	}
+	.commentmetadata {
+		border-bottom: 1px dotted #BBB;
+		padding-bottom: 9px;
+		margin-bottom: 9px;
+		a {}
+	}
+	.parent {}
+	.comment {
+		overflow: hidden;
+	}
+	.children {}
+	.pingback {}
+	.bypostauthor {}
+	.comment-author {}
+	.comment-author-admin {}
+	li {
+		list-style: none;
+		p {}
+		ul {
+			&.children li {
+				&.alt {}
+				&.byuser {}
+				&.comment {}
+				// &.depth-{id} {}
+				&.bypostauthor {}
+				&.comment-author-admin {}
+			}
+		}
+	}
+
+} // end .commentlist
+
+
+
+
+
+#cancel-comment-reply {}
+#cancel-comment-reply a {}
+
+/*comment post */
+article.comment {
+	display: block;
+}
+
+.comment-content {
+	width: 80%;
+	margin: 0 0 2.5em 5%;
+	float: left;
+	position: relative;
+	-webkit-transition:all 100ms linear;
+	-moz-transition:all 100ms linear;
+	-ms-transition:all 100ms linear;
+	-o-transition:all 100ms linear;
+	transition:all 100ms linear;
+}
+
+.comment-content:hover {
+    -webkit-transform: translateX(-18px);
+    -moz-transform: translateX(-18px);
+    -ms-transform: translateX(-18px);
+    -o-transform: translateX(-18px);
+    transform: translateX(-18px);
+}
+
+.comment-content a {}
+
+// #comments
+#comments ul.children {
+	padding-left: 0;
+	margin-top: 0;
+	display: block;
+	position: relative;
+}
+
+// #comments
+ul.children li:before {
+	// content: '';
+	// height: 2.5em;
+	// width: 8px;
+	// background: #333;
+	// position: absolute;
+	// top: -2.5em;
+	// left: 93%;
+}
+
+ul.children .comment-content {
+	width: 75%;
+}
+
+ul.children .comment-content:before {
+
+}
+
+.comment-content .waitnote {
+	color: #eb0507;
+}
+
+.commentlist li ul.children li.bypostauthor .comment-content {
+    border-bottom:none;
+}
+
+.commentlist li ul.children li.bypostauthor .comment-content:before {
+    border-right-color:#009AF1;
+}
+
+.commentlist ul.children article.comment {
+    padding-left: 60px;
+}
+
+#comment-nav-below {
+	margin-bottom: 20px;
+	display: block;
+	overflow: hidden;
+}
+
+.post.pingback {
+    display: block;
+    position: relative;
+    padding: 18px 20px;
+    text-align: right;
+    // background: #333;
+    // color: #aaa;
+    margin: 18px 0;
+    line-height: 20px;
+    // border-bottom: 4px solid #009AF1;
+
+    p {
+        margin-top: 0;
+    }
+    a {
+        // color: #f0f0f0;
+    }
+    i {
+        color: #009af1;
+        font-size: 18px;
+        padding: 5px;
+        border: 1px solid;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+        border-radius: 100px;
+        position: absolute;
+        top: 11px;
+        left: 13px;
+    }
+}
+
+// comments are closed notification - TODO : create notification styles
+p.nocomments,
+p.nopassword {
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	overflow: hidden;
+	clear: both;
+	border: 1px solid;
+}
+
+

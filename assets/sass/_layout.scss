@@ -1,0 +1,31 @@
+/* This File Compiles all the Layout partials for Layout.css, */
+
+/* General Layout */
+@import 'layout/_general.scss';
+@import 'layout/_header.scss';
+@import 'layout/_navigation.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_sidebars.scss';
+@import 'layout/_pagetitle.scss';
+@import 'layout/_breadcrumbs.scss';
+
+/* Page Specific */
+@import 'layout/_blog.scss';
+@import 'layout/_contact.scss';
+@import 'layout/_home.scss';
+@import 'layout/_landing.scss';
+@import 'layout/_404.scss';
+@import 'layout/_author.scss';
+@import 'layout/_testimonials.scss';
+
+
+
+/*
+
+	SHAME FILE - This is for quick and dirty fixes and good
+	old IE that should be worked into the neatness above
+	where possible,
+
+*/
+
+@import 'layout/shame.scss';

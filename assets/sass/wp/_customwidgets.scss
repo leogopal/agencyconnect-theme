@@ -1,0 +1,40 @@
+/* Custom Widget Styles
+- - - - - - - - - - - - - - */
+.nona-recent-posts {
+	padding-left: 0;
+	list-style: none;
+}
+
+.nona-widget-post-img {
+	display: block;
+	position: relative;
+}
+
+/*custom recent posts*/
+.nona-recent-posts li {
+	clear: both;
+}
+
+.nona-recent-posts p {
+	margin-top: 0;
+}
+
+.nona-widget-post-img {
+	float: left;
+	display: block;
+	position: relative;
+	background-color: #CCC;
+	margin: 0 ($kbase/2) $kbase 0;
+	margin: 0 calculateRem($kbase/2) calculateRem($kbase) 0;
+	overflow: hidden;
+}
+
+.nona-recent-posts img {
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	max-width: none;
+	max-height: 100%;
+	position: absolute;
+	right: 0;
+}

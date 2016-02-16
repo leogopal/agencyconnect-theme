@@ -1,0 +1,348 @@
+
+
+html {
+    background-color:#111!important;
+    height: auto;
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkkt-box-sizing :border-box;
+    -moz-box-sizing :border-box;
+    box-sizing :border-box;
+}
+body,
+body.login {
+    /* background-color:#fff!important; */
+    border-left: 10px solid #E6E674;
+    position: relative;
+    color: #f5f5f5;
+    margin-bottom: -500px;
+    min-height: 800px;
+    overflow: hidden;
+    width: 100%;
+    height:100%;
+}
+body.login div#login {
+    /* margin: 0 auto; */
+    position: relative;
+    padding: 64px 0 300;
+    background: rgba(0,0,0,0.55);
+    height: 100%;
+    padding-bottom: 300px;
+}
+body.login div#login h1 {
+    position: relative;
+    max-width: 100%;
+    right: auto;
+}
+body.login div#login h1 a {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    width: auto;
+    color: #DDD;
+    text-align: left;
+    padding: 0 21px;
+    max-width: 100%;
+    background-size: auto;
+    background-position: 24px bottom;
+}
+body.login div#login form#loginform,
+body.login div#login form#registerform,
+body.login div#login form#lostpasswordform {
+    /*background: rgba(10,10,10,0.7);*/
+    background: transparent;
+    border:none;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    padding-top: 0px;
+    padding-bottom: 18px;
+    /*height: auto!important;*/
+    margin-top:0;
+}
+#lostpasswordform,
+#registerform,
+#lostpasswordform {
+    background: transparent;
+    border:none;
+    padding-top: 0;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+}
+body.login div#login form#loginform p {}
+
+body.login div#login form#loginform p label,
+body.login div#login form#registerform p label,
+body.login div#login form#lostpasswordform p label {
+    color: #eee;
+}
+body.login div#login form#loginform input,
+body.login div#login form#registerform input,
+body.login div#login form#lostpasswordform input {
+    border: 1px solid #777;
+    background: #424242;
+    color: #A1A1A1;
+    margin-top:0;
+}
+.login form .input, .login input[type=text] {
+    font-size: 21px;
+    line-height: 1;
+    margin: 2px 6px 20px 0;
+}
+
+body.login div#login form#loginform input#user_login,
+body.login div#login form#registerform  input#user_login {
+    margin-bottom: 0;
+}
+body.login div#login form#loginform input#user_pass {}
+
+body.login div#login form#loginform p.forgetmenot,
+body.login div#login form#registerform p.forgetmenot,
+body.login div#login form#lostpasswordform p.forgetmenot {
+     line-height:27px;
+}
+body.login div#login form#loginform p.forgetmenot input#rememberme {
+    line-height: 1.5em;
+    font-size: 24px;
+    padding: 2px!important;
+    height: 21px;
+    width: 21px;
+}
+input[type=checkbox]:checked:before {
+    color: #FFD600;
+}
+body.login div#login form#loginform p.submit {}
+
+body.login div#login form#loginform p.submit input#wp-submit,
+body.login div#login form#registerform p.submit input#wp-submit,
+body.login div#login form#lostpasswordform p.submit input#wp-submit,
+.wp-core-ui .button-primary {
+    background: #EEDB53;
+    -webkit-border-radius:0px;
+    -moz-border-radius:0px;
+    border-radius:0px;
+        -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    border:none;
+    border-left: 10px solid #FFFF00;
+    padding: 0 30px 0 15px;
+    color: #2B2929;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    height: 30px;
+}
+body.login div#login form#loginform p.submit input#wp-submit:hover,
+body.login div#login form#loginform p.submit input#wp-submit:active,
+.wp-core-ui .button-primary:active,
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus {
+    border-color: #FC0;
+    background: #FAE600;
+}
+body.login div#login p#nav,
+body.login div#login p#backtoblog {
+    display: block;
+    margin: 9px 0px 0px 0px;
+    padding: 0px;
+    font-size: 0px;
+}
+body.login div#login p#nav a {
+    margin:9px 0px 10px 8px;
+}
+body.login div#login p#nav a,
+body.login div#login p#backtoblog a {
+    display:block!important;
+    text-transform:uppercase;
+    text-align:left;
+    color:#fff!important;
+    text-decoration:none;
+    letter-spacing:0px;
+    font-size:12px;
+
+    border:none;
+    border-bottom: 1px dotted #fff;
+    text-shadow:none;
+    padding: 8px 0px;
+    margin: 9px 25px 0px 23px;
+}
+body.login div#login p#nav a:hover,
+body.login div#login p#backtoblog a:hover,
+body.login div#login p#nav a:active,
+body.login div#login p#backtoblog a:active {
+    /*background: #f43;*/
+    /*border-left-color: #f33;*/
+    color: #E6DB55!important;
+}
+body.login div#login form#loginform input:focus,
+body.login div#login form#registerform input:focus,
+body.login div#login form#lostpasswordform input:focus {
+    border: 1px dotted rgba(255, 245, 0, 0.64);
+    background: #333;
+    color:#f1f1f1;
+}
+
+body.login div#login p#backtoblog {
+
+}
+body.login div#login p#backtoblog a {
+    margin-top:0px;
+}
+.login .message {
+    background-color: #E6DB55;
+    border-color: #E6DB55;
+    margin-bottom:8px;
+}
+#login_error {
+    background-color: #f43!important;
+    color:#fff;
+    border-color: #C00;
+}
+#login_error a {
+    color:#FFF;
+}
+::-webkit-input-placeholder {
+   color: #AAA;
+   text-transform: uppercase;
+   font-size: 16px;
+   line-height: 29px;
+   text-indent: 4px;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #AAA;
+   text-transform: uppercase;
+   font-size: 16px;
+   line-height: 29px;
+   text-indent: 4px;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #AAA;
+   text-transform: uppercase;
+   font-size: 16px;
+   line-height: 29px;
+   text-indent: 4px;
+}
+:-ms-input-placeholder {
+   color: #AAA;
+   text-transform: uppercase;
+   font-size: 16px;
+   line-height: 29px;
+   text-indent: 4px;
+}
+.sidenote {
+    position: relative;
+    padding-top: 20px;
+    clear: both;
+    color: #aaa;
+}
+.sidenote h2 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 0px;
+    color: #fff;
+}
+.sidenote h2 a,
+.sidenote p a {
+    color: #E6DB55;
+}
+.sidenote p {
+    font-size: 10px;
+    line-height: 15px;
+    margin-top:10px;
+}
+.sidenote h2 a:hover,
+.sidenote a:hover {
+    color: #E9D810;
+}
+
+.anystretch {
+    position:fixed!important;
+}
+
+@media screen and (max-width: 767px) {
+     .sidenote {
+        padding:0px!important;
+
+        margin-top: 76px!important;
+}
+}
+
+/*@group tablet*/
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+    body.login div#login {
+        margin: 0;
+        padding: 94px 0 0;
+        border-right: 1200px solid rgba(0,0,0,0.7);
+    }
+    .sidenote {
+        position: absolute;
+        top: 0;
+        left: 340px;
+        width: 320px;
+        /*padding-top: 199px;*/
+    }
+    .sidenote h2 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 30px;
+    }
+/*    .sidenote h2 a {
+        color: #222;
+    }*/
+    .sidenote p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top:18px;
+    }
+}
+/*@end*/
+
+/*@group desktop*/
+@media screen and (min-width: 1025px) {
+    body.login div#login {
+        margin: 0 22%;
+        /*padding: 114px 0 0;*/
+        border-right: 1200px solid rgba(0,0,0,0.7);
+    }
+    .sidenote {
+        position: absolute;
+        top: 0;
+        left: 340px;
+        width: 400px;
+        /*padding-top: 199px;*/
+    }
+    .sidenote h2 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 60px;
+    }
+    .sidenote h2 a {
+        color: #E6DB55;
+    }
+
+    .sidenote h2 a:hover,
+    .sidenote a:hover {
+        color: #E9D810;
+    }
+    .sidenote p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top:18px;
+    }
+}
+/*@end*/
+
+
+

@@ -1,0 +1,41 @@
+/*404*/
+.four-oh {
+  font-size: 200px;
+  margin-top: 0;
+  font-weight: 900;
+}
+.four-oh-four {
+    text-align: center;
+    h2 {
+        font-size: 72px;
+    	padding-top: 20%;
+        font-weight: 900;
+        letter-spacing: 5px;
+        text-indent: 5px;
+        line-height: 1em;
+        margin: 0;
+        @include breakpoint($mobile){
+        	font-size: 144px;
+		    letter-spacing: 30px;
+		    text-indent: 30px;
+        }
+        @include breakpoint($tablet){
+			font-size: 288px;
+			padding-top: 2%;
+			letter-spacing: 50px;
+			text-indent: 50px;
+        }
+    }
+    p {
+        font-size: 13px;
+        padding: 9px;
+        margin: 0;
+        @include breakpoint($mobile){
+			padding: 18px;
+		}
+        @include breakpoint($tablet){
+			font-size: 16px;
+			padding: 36px;
+		}
+    }
+}

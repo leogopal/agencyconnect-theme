@@ -1,0 +1,57 @@
+/* Type Setup */
+html { @include khtml(); }
+body {
+  @include kbody();
+  @include fontfamily1();
+  color: $textcolor;
+}
+
+/* Typography */
+%heading {
+	text-transform: uppercase;
+	color: #222222;
+	font-weight: 600;
+}
+
+h1 { @include ktype(4, 0, 1, $pull: 0); @extend %heading;}
+h2 { @include ktype(3, 0, 1, $pull: 0); @extend %heading;}
+h3 { @include ktype(2, 0, 1); @extend %heading;}
+h4 { @include ktype(1, 0, 1); @extend %heading;}
+h5 { @include ktype(0, 0, 1); @extend %heading;}
+h6 { 
+    @extend %heading;
+    text-transform: capitalize;
+    @include ktype(0, 0 , 1);
+    @include fontfamily2();
+}
+
+p, ul, ol,dl {@include ktype(0,0,1);}
+small { 
+  display: inline-block;
+  @include ktype(-1,0,0); 
+}
+li,dt {@include ktype(0,0,0);}
+
+/* Quotes */
+blockquote,
+blockquote p {
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  @include krem('margin-left',24px);
+  @include ksuffix(1,true);
+  @include ktype(2,0,1);
+  @include pad(.25);
+
+  cite {
+    display: block;
+    @include ktype(-1,0,0);
+    text-align: right
+  }
+}
+
+
+
+
+

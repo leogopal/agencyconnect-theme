@@ -1,0 +1,52 @@
+{
+  "name" : "Nona Starter Theme",
+  "config": {
+    "vendor-dir": "lib/vendor",
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type":"composer",
+      "url":"http://wpackagist.org"
+    },
+    { 
+      "type" : "package", 
+      "package" : {
+        "name" : "gizburdt/cuztom",
+        "version": "2.9.16",
+        "dist" : {
+           "url"       : "https://github.com/gizburdt/cuztom/archive/master.zip",
+          "type"      : "zip"
+        }
+      }
+    },
+    { 
+      "type" : "package", 
+      "package" : {
+        "name" : "justintadlock/breadcrumb-trail",
+        "version": "1.0.0",
+        "dist" : {
+          "url"         : "https://github.com/justintadlock/breadcrumb-trail/archive/master.zip",
+          "type"        : "zip"
+        }
+      }
+    },
+    { 
+      "type" : "package", 
+      "package" : {
+        "name" : "options/redux-framework",
+        "version": "3.5.6",
+        "dist" : {
+          "url"         : "https://github.com/reduxframework/redux-framework/archive/master.zip",
+          "type"        : "zip"
+        }
+      }
+    }
+  ],
+  "require" : {
+    "mobiledetect/mobiledetectlib"    : "*",
+    "options/redux-framework" 		  : "*",
+    "gizburdt/cuztom"                 : "*",
+    "justintadlock/breadcrumb-trail"  : "*"
+  }
+}

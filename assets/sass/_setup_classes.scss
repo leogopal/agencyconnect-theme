@@ -1,0 +1,55 @@
+/* 
+	placeholder classes 
+*/
+
+
+// new micro clearfix
+%clearfix {
+	@include clearfix();
+}
+
+// Hide things
+%hide {
+	@include hide();
+}
+
+
+
+/* mobile Specific Styles */
+@media screen and (max-width: $mobile) {
+	// new micro clearfix
+	%clearfix {
+		@include clearfix();
+	}
+
+	// Hide things
+	%hide {
+		@include hide();
+	}
+}
+
+/* Tablet Specific Styles */
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+	// new micro clearfix
+	%clearfix {
+		@include clearfix();
+	}
+
+	// Hide things
+	%hide {
+		@include hide();
+	}
+}
+
+/* Desktop Specific Styles */
+@media screen and (min-width: $tablet) {
+	// new micro clearfix
+	%clearfix {
+		@include clearfix();
+	}
+
+	// Hide things
+	%hide {
+		@include hide();
+	}
+}

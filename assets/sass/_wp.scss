@@ -1,0 +1,15 @@
+/* This File Compiles all the Layout partials for wp.css, */
+
+/* Standard WP Components */
+@import 'wp/_bodyclass.scss';
+@import 'wp/_postclass.scss';
+@import 'wp/_wysiwyg.scss';
+@import 'wp/_widgets.scss';
+@import 'wp/_customwidgets.scss';
+@import 'wp/_search.scss';
+@import 'wp/_shortcodes_and_styles.scss';
+@import 'wp/_pagination.scss';
+@import 'wp/_misc.scss';
+@import 'wp/_gallery.scss';
+@import 'wp/_comments.scss';
+

@@ -1,0 +1,105 @@
+body, html {
+	background-color: #fff;
+	min-height: 100%;
+	height: 100%;
+}
+
+
+
+.wrap {
+	position:relative;
+}
+
+/* Base Layout */
+.grid-container {
+	@include container();
+	@include krem('padding-left',30px,$resolve:true);
+	@include krem('padding-right',30px,$resolve:true);
+	min-width: $min-width;
+
+	@include breakpoint($tablet) { // desktop
+		@include container(1200px);
+	}
+}
+
+// The Main Content Container.
+.content {
+	@include clearfix();
+	@include span(24 of 24);
+
+	@include breakpoint($mobile $tablet) { // tablet
+		@include span(19 of 24);
+		@include suffix(1 of 24);
+		&.swop {
+			@include push(5 of 24);
+			@include suffix(0 of 24);
+			@include prefix(1 of 24);
+		}
+	}
+	@include breakpoint($tablet) { // desktop
+		@include span(17 of 24);
+		@include suffix(1 of 24);
+		&.swop {
+			@include push(7 of 24);
+			@include suffix(0 of 24);
+			@include prefix(1 of 24);
+		}
+	}
+
+	// modifiers, placed below the media queries as an efficiernt override.
+	&.content-full {
+		padding-right:0;
+		@include span(24 of 24);
+	}
+	&.content-center {
+		@include span(24 of 24);
+		@include prefix(4 of 24);
+		@include suffix(4 of 24);
+	}
+
+}
+
+.sidebar {
+	@include span(24 of 24);
+
+	@include breakpoint($mobile $tablet) { // tablet
+		@include span(5 of 24);
+		&.swop {
+			@include pull(24);
+		}
+	}
+
+	@include breakpoint($tablet) { // desktop
+		@include span(7 of 24);
+		&.swop {
+			@include pull(24);
+		}
+	}
+}
+
+
+
+
+.wrap {}
+.headwrap {}
+.topbarwrap {}
+.header {}
+.navwrap {}
+.bodywrap {}
+.main {}
+.footerwrap {}
+.footer {}
+.copyrightwrap {}
+.copyright {}
+.style-col {
+	@include span(12 of 24);
+	padding: 0 0.8rem 0 0;
+	&:last-child {
+		padding-right:0;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,47 @@
+{
+  "name": "start_project",
+  "version": "0.1",
+  "authors": [
+    "Paul van Zyl <paul@nonacreative.com>"
+  ],
+  "description": "general dependancies for IE9+ projects",
+  "license": "MIT",
+  "homepage": "nonacreartive.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Happy.js": "git://github.com/henrikjoreteg/Happy.js",
+    "bigSlide": "*",
+    "fastclick": "*",
+    "fitvids": "*",
+    "jquery-anystretch": "*",
+    "jquery": "~2.1.1",
+    "knife": "*",
+    "select2": "*",
+    "susy": "*",
+    "swipebox": "*",
+    "underscore": "*",
+    "velocity": "*",
+    "handlebars": "*",
+    "jquery.cookie": "*",
+    "slick-carousel": "*",
+    "jquery-cycle2": "*",
+    "magnific-popup": "*",
+    "normalize-css": "*",
+    "compass-breakpoint": "*",
+    "imagesloaded": "*",
+    "font-awesome": "*",
+    "jquery-unveil": "*",
+    "matchHeight": "*"
+  },
+  "devDependencies": {
+    "blast-text": "~2.0.0",
+    "vivus": "~0.2.1"
+  }
+}

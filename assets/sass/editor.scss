@@ -1,0 +1,171 @@
+/*This will be loaded with the WP editor and is used for styling elements
+in the Tiny MCE, to make visual editing more usable.*/
+
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+body#tinymce {
+	line-height: 1.5;
+	font-size: 12px;
+	max-width: 760px;
+	font-family: sans-serif;
+}
+
+body#tinymce h1,
+body#tinymce h2,
+body#tinymce h3,
+body#tinymce h4,
+body#tinymce h5,
+body#tinymce h6,
+body#tinymce p {
+	line-height: 1.5em;
+	margin: 18px 0 0 0;
+}
+
+
+/*Basic FLuid Grid*/
+.one_half{ width:48%; }
+.one_third{ width:30.66%; }
+.two_third{ width:65.33%; }
+.one_fourth{ width:22%; }
+.three_fourth{ width:74%; }
+.one_fifth{ width:16.8%; }
+.two_fifth{ width:37.6%; }
+.three_fifth{ width:58.4%; }
+.four_fifth{ width:67.2%; }
+.one_sixth{ width:13.33%; }
+.five_sixth{ width:82.67%; }
+.one_half,.one_third,.two_third,.three_fourth,.one_fourth,.one_fifth,.two_fifth,.three_fifth,.four_fifth,.one_sixth,.five_sixth{ display: inline-block;position:relative; margin-right:4%; float:left; }
+.last{ margin-right:0 !important; clear:right; }
+.clearboth {clear:both;display:block;font-size:0;height:0;line-height:0;width:100%;}
+
+button,
+.button {
+	border: none;
+	width: auto;
+	font-weight: bolder;
+	height: 2.5em;
+	color: white;
+	display: inline-block;
+	line-height: 2.5em;
+	padding: 0 1em;
+	clear: both;
+	margin-top: 0.8333em;
+	background: #222;
+	text-decoration: none;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	    -ms-border-radius: 2px;
+	     -o-border-radius: 2px;
+			border-radius: 2px;
+	-webkit-box-shadow: 0px 1px 3px #333;
+	   -moz-box-shadow: 0px 1px 3px #333;
+	    -ms-box-shadow: 0px 1px 3px #333;
+	     -o-box-shadow: 0px 1px 3px #333;
+			box-shadow: 0px 1px 3px #333;
+}
+
+button:hover,
+.button:hover {
+	background: #232323;
+	color: #FFF;
+	-webkit-box-shadow: inset 0px 1px 3px #333;
+	   -moz-box-shadow: inset 0px 1px 3px #333;
+	    -ms-box-shadow: inset 0px 1px 3px #333;
+	     -o-box-shadow: inset 0px 1px 3px #333;
+			box-shadow: inset 0px 1px 3px #333;
+}
+
+button.alt,
+.button.alt {
+	background: #efefef;
+	color:#111;
+}
+
+button.alt:hover,
+.button.alt:hover {
+	background: #dedede;
+}
+
+button.alt:active,
+.button.alt:active {
+	background: #cfcfcf;
+}
+
+blockquote {
+	margin: 1.5em 2em;
+	font-size: 1.5em;
+	font-style: italic;
+	padding: 0.375em 1.5em;
+	border-left: 1px dotted #CCC;
+}
+
+blockquote p {
+	margin-top: 0;
+}
+
+i {
+	display: inline-block;
+	width: 1.5em;
+	line-height: 1.5em;
+	text-align:center;
+}
+
+/*Formatting*/
+	.heading-basic {
+		border-bottom: 1px dotted #999;
+		padding: 18px 18px 12px;
+		display: table;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.pull-left,
+	.pull-right {
+		width: 35%;
+		padding: 18px;
+		margin:4px 18px 9px!important;
+		font-size:1.333em;
+		line-height: 1.125em;
+		background: #111;
+		color:#eee;
+		text-align: center;
+	}
+	.pull-left {
+		float: left;
+		margin-left: 0;
+	}
+	.pull-right {
+		float: right;
+		margin-right:0;
+	}
+	.pull-left p,
+	.pull-right p {
+		margin: 0;
+	}
+
+	.thin {
+		font-weight: lighter;
+		font-weight: 100;
+	}
+
+
+/*Icon Font */
+@import 'lib/_font-awesome.scss';
+
+/*@end*/

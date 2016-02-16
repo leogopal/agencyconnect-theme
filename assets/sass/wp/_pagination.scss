@@ -1,0 +1,70 @@
+/*Pagination */
+#nav-below {
+	margin: 0;
+    @include kprefix(1,true);
+    @include ksuffix(1,true);
+}
+
+.nav-previous {
+    float: left;
+	padding: 0;
+    @include kprefix(1);
+    @include ksuffix(1);
+	overflow: hidden;
+	text-align: left;
+    max-width: 49%;
+
+    a {}
+}
+
+.nav-next {
+	float: right;
+	overflow: hidden;
+	padding: 0;
+    @include kprefix(1);
+    @include ksuffix(1);
+	text-align: right;
+    max-width: 49%;
+
+    a {
+        display: block;
+        height: auto;
+    }
+}
+
+/* Numbered Pagination */
+.page-numbers {
+    float: left;
+    padding: 0;
+    list-style: none;
+    color: $textmid;
+    font-weight: 300;
+
+    li {
+        display: inline-block;
+    }
+
+    a,
+    span {
+        display: block;
+        position: relative;
+        padding : 5px;
+    }
+
+    span.current {
+        color: $textlight;
+        font-weight: 900;
+        border-bottom: 2px solid;
+        bottom: -2px;
+        color: $linkhighlight;
+    }
+    a:hover {
+        color: $linkhighlight;
+    }
+    &.next,
+    &.prev {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $textmid;
+    }
+}

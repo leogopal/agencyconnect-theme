@@ -1,0 +1,52 @@
+/*Author Pages */
+.author-info {
+	@extend %clearfix;
+	
+	@include ksuffix(1, true);
+}
+
+.author-avatar {
+	@include span(24);
+
+	img {
+		width: 100%;
+	}
+
+	@include breakpoint($mobile) {
+		@include span(7 of 24);
+		@include suffix(1);
+	}
+}
+
+.author-description {
+	@include span(24);
+
+	h2 {
+		@include ktype(1, 0, 1);
+	}
+
+	.social-links {
+	    padding-left: 0;
+	    list-style: none;
+	    
+	    li {
+	        float: left;
+	        display: inline-block;
+	        margin-right: 1.6rem;
+	    }
+	}
+
+	@include breakpoint($mobile) {
+		@include span(17 of 24 at 7);
+	}
+}
+
+.author-social {
+    display: inline;
+    border-bottom: 1px dotted;
+
+    i {
+        display: inline-block;
+        width: 26px;
+    }
+}

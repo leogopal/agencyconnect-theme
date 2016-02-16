@@ -1,0 +1,21 @@
+.breadcrumbwrap {
+	@include ksuffix(1);
+}
+.breadcrumbwrap span {
+	display: inline-block;
+	position: relative;
+	padding-right: 10px;
+	margin-right: 4px;
+}
+
+.breadcrumbwrap .sep {}
+.breadcrumbwrap a {}
+.breadcrumbwrap a:after {}
+.breadcrumbwrap .trail-end {}
+.breadcrumbwrap a:hover,
+.breadcrumbwrap a:active {}
+.breadcrumbwrap a:hover:after,
+.breadcrumbwrap a:active:after {}
+.breadcrumbs {
+	@include span(24 of 24);
+}

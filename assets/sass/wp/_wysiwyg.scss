@@ -1,0 +1,106 @@
+/* WordPress WYSIWYG Editor Styles
+- - - - - - - - - - - - - - - - - - */
+.hentry span {}
+.hentry img {
+	margin: 0;
+	@include krem('margin-bottom', $kbase);
+}
+.wp-caption {
+	margin: $kbase 0;
+	margin: calculateRem($kbase) 0;
+	text-align: center;
+	max-width:100%;
+	background: $bg2;
+	color: $textlight;
+	position: relative;
+
+	img {
+		border: 0 none;
+		padding: 0;
+		margin: 0;
+		max-width:100%;
+		width: 100%;
+	}
+
+	p.wp-caption-text {
+		margin: 0;
+		padding: ($kbase/2) ($kbase/4);
+		padding: calculateRem($kbase/2) calculateRem($kbase/4);
+		position: relative;
+		text-align: center;
+		width: 100%;
+		background: #101010;
+		background: rgba(0,0,0,0.5);
+
+		@include ktype(-1,0,0);
+	}
+
+	p.wp-caption-text a {
+		color:#fff;
+	}
+
+}
+
+
+.alignleft,
+img.alignleft {
+	@include krem('margin-right', $kbase);
+	display: inline;
+	float: left;
+}
+.alignright,
+img.alignright {
+	@include krem('margin-left', $kbase);
+	display: inline;
+	float: right;
+}
+.aligncenter,
+img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+}
+.alignnone,
+img.alignnone {
+	clear: both;
+	@include krem('margin-bottom', $kbase);
+}
+
+.wp-smiley {
+	margin: 0 !important;
+	max-height: 1em;
+	}
+
+blockquote {
+	.left {
+		margin-right: 20px;
+		text-align: right;
+		margin-left: 0;
+		width: 33%;
+		float: left;
+	}
+
+	.right {
+		margin-left: 20px;
+		text-align: left;
+		margin-right: 0;
+		width: 33%;
+		float: right;
+	}
+}
+
+
+
+.content article img,
+.content article .wp-caption {
+	@include breakpoint(0 $toSmall) {
+		width: 100%!important;
+		max-width: 100%;
+		height: auto;
+		float: none;
+		position: relative;
+		display: block;
+		// margin: 20px 0;
+	}
+}

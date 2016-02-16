@@ -1,0 +1,32 @@
+/* presentation classes */
+
+
+// Hide
+.hide {@include hide();}
+
+/* mobile Specific Styles */
+@include breakpoint(0 $toTablet){
+	.hide-on-mobile,
+	.show-on-tablet,
+	.show-on-desktop {
+		@include hide();
+	}	
+}
+
+/* Tablet Specific Styles */
+@include breakpoint($fromTablet $toDesktop){
+	.hide-on-tablet,
+	.show-on-mobile,
+	.show-on-desktop  {
+		@include hide();
+	}
+}
+
+/* Desktop Specific Styles */
+@include breakpoint($desktop) {
+	.hide-on-desktop,
+	.show-on-tablet,
+	.show-on-mobile {
+		@include hide();
+	}
+}

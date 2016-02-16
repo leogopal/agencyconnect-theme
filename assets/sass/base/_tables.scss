@@ -1,0 +1,38 @@
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    @include ksuffix(1,true);
+}
+
+th {
+  font-weight: bold;
+}
+
+thead {
+  border-bottom: 1px solid #222;
+  th {
+    background: transparent;
+  }
+}
+tr {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+th,
+td,
+caption {
+  text-align: left;
+  @include krem('padding', ($kbase / 2));
+}
+
+caption     {
+  border: 1px dotted #555;
+  background: transparent;
+}
+
+tfoot       {
+  font-style: italic;
+  border-top: 1px solid #555;
+}
