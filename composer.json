@@ -23,6 +23,17 @@
     {
       "type" : "package",
       "package" : {
+        "name" : "webdevstudios/cmb2",
+        "version": "2.1.2",
+        "dist" : {
+           "url"       : "https://github.com/WebDevStudios/CMB2/archive/v2.1.2.zip",
+          "type"      : "zip"
+        }
+      }
+    },
+    {
+      "type" : "package",
+      "package" : {
         "name" : "justintadlock/breadcrumb-trail",
         "version": "1.0.0",
         "dist" : {
@@ -30,11 +41,11 @@
           "type"        : "zip"
         }
       }
-    },
+    }
   ],
   "require" : {
     "mobiledetect/mobiledetectlib"    : "*",
-    "options/redux-framework" 		  : "*",
+    "webdevstudios/cmb2"              : "*",
     "gizburdt/cuztom"                 : "*",
     "justintadlock/breadcrumb-trail"  : "*"
   }

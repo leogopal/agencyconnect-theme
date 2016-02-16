@@ -4,6 +4,15 @@
  * @author Paul van Zyl <paul@nonacreative.com>
  */
 
+ /**
+  *
+  */
+ if ( file_exists( dirname( __FILE__ ) . '/lib/vendor/webdevstudios/cmb2/init.php' ) ) {
+ 	require_once dirname( __FILE__ ) . '/lib/vendor/webdevstudios/cmb2/init.php';
+} elseif ( file_exists( dirname( __FILE__ ) . '/lib/vendor/webdevstudios/CMB2/init.php' ) ) {
+ 	require_once dirname( __FILE__ ) . '/lib/vendor/webdevstudios/CMB2/init.php';
+ }
+
 /**
  * Vendor libs
  *  - BreadCrumbs
@@ -14,6 +23,7 @@
  */
 include 'lib/vendor/justintadlock/breadcrumb-trail/inc/breadcrumbs.php';
 include 'lib/nona-custom-posts-and-meta.php';
+include 'lib/nona-custom-metaboxes.php';
 include 'lib/nona-options-render.php';
 
 
@@ -27,6 +37,7 @@ include 'lib/Nona_Admin.php';
 include 'lib/Nona_Editor.php';
 include 'lib/Nona_Sidebars.php';
 include 'lib/Nona_Layout.php';
+include 'lib/Nona_Settings.php';
 
 /**
  * Theme functions & Extension

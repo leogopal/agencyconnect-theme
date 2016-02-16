@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "04d2919444548aedbd36f4e549f2ed0e",
-    "content-hash": "ef921443b3b7dd5486cbdd4a92672b4c",
+    "hash": "c47585d60fa4370823f3e6c431f50b8e",
+    "content-hash": "2101b47bf391adca5d065c93658aa9ef",
     "packages": [
         {
             "name": "gizburdt/cuztom",
@@ -83,6 +83,17 @@
             ],
             "time": "2015-06-18 09:43:23"
         },
+        {
+            "name": "webdevstudios/cmb2",
+            "version": "2.1.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/WebDevStudios/CMB2/archive/v2.1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
+        }
     ],
     "packages-dev": [],
     "aliases": [],

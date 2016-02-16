@@ -80,5 +80,18 @@
             "mobile detector",
             "php mobile detect"
         ]
+    },
+    {
+        "name": "webdevstudios/cmb2",
+        "version": "2.1.2",
+        "version_normalized": "2.1.2.0",
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/WebDevStudios/CMB2/archive/v2.1.2.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist"
     }
 ]
