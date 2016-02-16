@@ -1,18 +1,5 @@
 [
     {
-        "name": "options/redux-framework",
-        "version": "3.5.6",
-        "version_normalized": "3.5.6.0",
-        "dist": {
-            "type": "zip",
-            "url": "https://github.com/reduxframework/redux-framework/archive/master.zip",
-            "reference": null,
-            "shasum": null
-        },
-        "type": "library",
-        "installation-source": "dist"
-    },
-    {
         "name": "gizburdt/cuztom",
         "version": "2.9.16",
         "version_normalized": "2.9.16.0",

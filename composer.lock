@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "04d2919444548aedbd36f4e549f2ed0e",
+    "content-hash": "ef921443b3b7dd5486cbdd4a92672b4c",
     "packages": [
         {
             "name": "gizburdt/cuztom",
@@ -82,17 +83,6 @@
             ],
             "time": "2015-06-18 09:43:23"
         },
-        {
-            "name": "options/redux-framework",
-            "version": "3.5.6",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/reduxframework/redux-framework/archive/master.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        }
     ],
     "packages-dev": [],
     "aliases": [],

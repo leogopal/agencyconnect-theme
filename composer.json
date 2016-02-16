@@ -9,8 +9,8 @@
       "type":"composer",
       "url":"http://wpackagist.org"
     },
-    { 
-      "type" : "package", 
+    {
+      "type" : "package",
       "package" : {
         "name" : "gizburdt/cuztom",
         "version": "2.9.16",
@@ -20,8 +20,8 @@
         }
       }
     },
-    { 
-      "type" : "package", 
+    {
+      "type" : "package",
       "package" : {
         "name" : "justintadlock/breadcrumb-trail",
         "version": "1.0.0",
@@ -31,17 +31,6 @@
         }
       }
     },
-    { 
-      "type" : "package", 
-      "package" : {
-        "name" : "options/redux-framework",
-        "version": "3.5.6",
-        "dist" : {
-          "url"         : "https://github.com/reduxframework/redux-framework/archive/master.zip",
-          "type"        : "zip"
-        }
-      }
-    }
   ],
   "require" : {
     "mobiledetect/mobiledetectlib"    : "*",

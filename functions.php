@@ -5,21 +5,6 @@
  */
 
 /**
- * Include Libraries / Modules & Custom Functionality
- */
-if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/lib/vendor/options/redux-framework/ReduxCore/framework.php' ) ) 
-{
-  require_once( dirname( __FILE__ ) . '/lib/vendor/options/redux-framework/ReduxCore/framework.php' );
-}
-
-if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/lib/Nona_Options.php' ) ) 
-{
-  require_once( dirname( __FILE__ ) . '/lib/Nona_Options.php' );
-  // require_once(dirname( __FILE__ ) .  '/functions/theme-options/sample/sample-config.php'); // use for testing.
-}
-
-
-/**
  * Vendor libs
  *  - BreadCrumbs
  *  - Custom Post Types and Meta Helper
@@ -33,11 +18,11 @@ include 'lib/nona-options-render.php';
 
 
 /**
- * Theme Modules 
+ * Theme Modules
  * Used primarily to setup custom functionality
  */
 include 'lib/Nona_Scripts.php';
-include 'lib/Nona_Content.php'; 
+include 'lib/Nona_Content.php';
 include 'lib/Nona_Admin.php';
 include 'lib/Nona_Editor.php';
 include 'lib/Nona_Sidebars.php';
@@ -55,16 +40,16 @@ include 'lib/nona_template_helpers.php';
  * On Theme Setup
  * This requires some customization for each new project
  */
-if ( !function_exists( 'nona_theme_setup' ) ) 
+if ( !function_exists( 'nona_theme_setup' ) )
 {
-  function nona_theme_setup() 
+  function nona_theme_setup()
   {
 
     /* add language files */
     // load_theme_textdomain( 'nona', get_template_directory() . '/functions/assets/languages' );
 
     /* arbitrary max content width required by WP */
-    if ( !isset( $content_width ) ) 
+    if ( !isset( $content_width ) )
     {
       $content_width = 900;
     }
@@ -88,7 +73,7 @@ if ( !function_exists( 'nona_theme_setup' ) )
     // add_image_size( 'slider', 0, 0 );
 
     /* Add custom image sizes to editor */
-    function nona_image_sizes_choice( $sizes ) 
+    function nona_image_sizes_choice( $sizes )
     {
       $custom_sizes = array(
         // 'indeximg' => 'nona Index Image',
@@ -109,11 +94,11 @@ if ( !function_exists( 'nona_theme_setup' ) )
     );
 
     /* Init Modules  */
-    
+
     /**
      * Sidebar Setup.
      * Define sidebars by adding names to the array.
-     * NB : Note that names such as 'blog', 'search', 'author', 'archive', 'page' 
+     * NB : Note that names such as 'blog', 'search', 'author', 'archive', 'page'
      * or 'single' will  automatically  be included on those pages as a default.
      */
     $widgetAreas = array(
@@ -122,9 +107,9 @@ if ( !function_exists( 'nona_theme_setup' ) )
         'default', // id
         'default', // name
         'used on all blog templates, and as a fallback for inactive sidebars' // desc
-      ), 
+      ),
       /* or just pass a name */
-      'page', 
+      'page',
       'contact',
           'footer-1'
     );
